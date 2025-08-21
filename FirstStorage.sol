@@ -60,6 +60,8 @@ contract FirstStorage {
         // _name="John Literal";
         personsInDB.push(Person({id:_id, name:_name, isAdmin:_isAdmin}));
 
+        nameToIsAdmin[_name] = _isAdmin;
+
     }
  
 }
